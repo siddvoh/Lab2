@@ -182,8 +182,10 @@
         <label for="date"> Date: </label>
         <input type="date" id="date">
         <br>
+        <br>
         <label for="summary"> One line day summary:  </label>
         <input type="text" id="summary">
+        <br>
         <br>
         <label for="stress"> Overall Day Stress: </label>
 		<input list="stress" name="stress" id="stresslist">
@@ -195,13 +197,70 @@
   		<option value="1 - Not Stressful">
 		</datalist>
         <br>
+        <br>
+        <label for="highlights"> Highlights for the day:  </label>
+        <br>
+        <textarea id="highlights" name="highlights" rows="4" cols="75"> Add the day's highlights here
+  		</textarea>
+        <br>
+        <br>
+        <label for="lowlights"> Lowlights for the day:  </label>
+        <br>
+        <textarea id="lowlights" name="lowlights" rows="4" cols="75"> Add the day's lowlights here
+  		</textarea>
+        <br>
+        <br>
+        <label for="ttd"> Things to do now:  </label>
+        <br>
+        <textarea id="ttd" name="ttd" rows="4" cols="75"> Add things to do here:
+  		</textarea>
+        <br>
+        <label for="meme">Meme: </label>
+        <input type="file" id="meme" name="meme">
+        <br>
+        <br>
+        <label for="audio">Audio: </label>
+        <input type="file" id="audio" name="audio">
+        <br>
+        <br>
+        <label for="video">Video: </label>
+        <input type="file" id="video" name="video">
+        <br>
+        <br>
         <label for="yest">Better than yesterday? </label>
 		<select id="yest">
   		<option value="y">Yes</option>
   		<option value="n">No</option>
 		</select>
         <br>
+        <br>
+        How much sleep did you get today:
+        <br>
+        <input type="radio" id="sleep4" name="sleep" value="4">
+        <label for="sleep4">0 - 4 hours</label><br>
+  		<input type="radio" id="sleep6" name="sleep" value="6">
+ 		<label for="sleep6">4 - 6 hours</label><br>  
+  		<input type="radio" id="sleep8" name="sleep" value="8">
+  		<label for="sleep8">6 - 8 hours</label><br>
+        <input type="radio" id="sleep10" name="sleep" value="10">
+  		<label for="sleep10">8 - 10 hours</label><br>
+        <input type="radio" id="sleep11" name="sleep" value="11">
+  		<label for="sleep11">10+ hours</label><br><br>
+        Select Everything you felt today:
+        <br>
+        <input type="checkbox" id="happy" name="happy" value="happy">
+  		<label for="happy"> Happy </label><br>
+        <input type="checkbox" id="sad" name="sad" value="sad">
+  		<label for="sad"> Sad </label><br>
+        <input type="checkbox" id="dissapointed" name="dissapointed" value="dissapointed">
+  		<label for="dissapointed"> Dissapointed </label><br>
+        <input type="checkbox" id="restless" name="restless" value="restless">
+  		<label for="restless"> Restless </label><br>
+        <input type="checkbox" id="motivated" name="motivated" value="motivated">
+  		<label for="motivated"> Motivated </label><br>
+         <br>
         <input type="submit" value="Submit">
+        <button type="button">Nevermind</button>
         <input type="reset" value="Reset">
         </fieldset>
         </form>
