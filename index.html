@@ -5,12 +5,12 @@
         <meta name="Journal Entries" content="Entries for last 3 days">
         <link rel="favicon" href="https://www.vhv.rs/dpng/d/132-1322685_favicon-ico-download-free-hd-png-download.png">
     </head>
-    <body>
+    <body style="background-color:#f7f6c6;">
         <header> Header: This is the journal of my past 3 days </header>
         <center>
         <main>
         <h1> SiddVoh's Journal <h1>
-        <h4> Accounts from my daily life </h4>
+        <h4><span style="color:red">Accounts from my daily life</span></h4>
         <nav>
   		<a href="#fri">Friday, 9th April</a> |
   		<a href="#sat">Saturday, 10th April</a> |
@@ -41,18 +41,18 @@
         </em>
         <b>Meme for the Day: </b>
         <br>
-        <img src="meme1.png" height="100" width="150">
+        <img src="meme1.png" height="200" width="300">
         <br>
         <b>Audio for the Day: </b>
         <br>
-        <audio height="100" width="150" controls>
+        <audio height="200" width="300" controls>
         <source src="audio1.mp3">
         </audio>
         <br>
         <b>Video for the Day: </b>
         <br>
-        <video controls>
-        <source src="video1.mp4" height="100" width="150">
+        <video height="200" width="300" controls>
+        <source src="video1.mp4"> 
         </video>
         <br>
         <strong> Things to do after today: </strong>
@@ -94,17 +94,17 @@
         </em>
         <b>Meme for the Day: </b>
         <br>
-        <img src="meme2.png" height="100" width="150">
+        <img src="meme2.png" height="200" width="300">
         <br>
         <b>Audio for the Day: </b>
         <br>
-        <audio controls>
+        <audio height="200" width="300" controls>
         <source src="audio2.mp3">
         </audio>
         <br>
         <b>Video for the Day: </b>
         <br>
-        <video controls>
+        <video height="200" width="300" controls>
         <source src="video2.mp4">
         </video>
         <br>
@@ -150,17 +150,17 @@
         </em>
         <b>Meme for the Day: </b>
         <br>
-        <img src="meme3.png" height="100" width="150">
+        <img src="meme3.png" height="200" width="300">
         <br>
         <b>Audio for the Day: </b>
         <br>
-        <audio controls>
+        <audio height="200" width="300" controls>
         <source src="audio3.mp3">
         </audio>
         <br>
         <b>Video for the Day: </b>
         <br>
-        <video controls>
+        <video height="200" width="300" controls>
         <source src="video3.mp4">
         </video>
         <br>
@@ -176,7 +176,97 @@
         <hr>
         </main>
         <br>
+        <form>
+        <fieldset>
+        <h3> New Entry for the Journal </h3>
+        <label for="date"> Date: </label>
+        <input type="date" id="date">
+        <br>
+        <br>
+        <label for="summary"> One line day summary:  </label>
+        <input type="text" id="summary">
+        <br>
+        <br>
+        <label for="stress"> Overall Day Stress: </label>
+		<input list="stress" name="stress" id="stresslist">
+		<datalist id="stress">
+ 		<option value="5 - Very Stressful">
+ 		<option value="4 - Slightly Stressful">
+  		<option value="3 - Neutral">
+ 		<option value="2 - Negligbly Stressful">
+  		<option value="1 - Not Stressful">
+		</datalist>
+        <br>
+        <br>
+        <label for="highlights"> Highlights for the day:  </label>
+        <br>
+        <textarea id="highlights" name="highlights" rows="4" cols="75"> Add the day's highlights here
+  		</textarea>
+        <br>
+        <br>
+        <label for="lowlights"> Lowlights for the day:  </label>
+        <br>
+        <textarea id="lowlights" name="lowlights" rows="4" cols="75"> Add the day's lowlights here
+  		</textarea>
+        <br>
+        <br>
+        <label for="ttd"> Things to do now:  </label>
+        <br>
+        <textarea id="ttd" name="ttd" rows="4" cols="75"> Add things to do here:
+  		</textarea>
+        <br>
+        <label for="meme">Meme: </label>
+        <input type="file" id="meme" name="meme">
+        <br>
+        <br>
+        <label for="audio">Audio: </label>
+        <input type="file" id="audio" name="audio">
+        <br>
+        <br>
+        <label for="video">Video: </label>
+        <input type="file" id="video" name="video">
+        <br>
+        <br>
+        <label for="yest">Better than yesterday? </label>
+		<select id="yest">
+  		<option value="y">Yes</option>
+  		<option value="n">No</option>
+		</select>
+        <br>
+        <br>
+        How much sleep did you get today:
+        <br>
+        <input type="radio" id="sleep4" name="sleep" value="4">
+        <label for="sleep4">0 - 4 hours</label><br>
+  		<input type="radio" id="sleep6" name="sleep" value="6">
+ 		<label for="sleep6">4 - 6 hours</label><br>  
+  		<input type="radio" id="sleep8" name="sleep" value="8">
+  		<label for="sleep8">6 - 8 hours</label><br>
+        <input type="radio" id="sleep10" name="sleep" value="10">
+  		<label for="sleep10">8 - 10 hours</label><br>
+        <input type="radio" id="sleep11" name="sleep" value="11">
+  		<label for="sleep11">10+ hours</label><br><br>
+        Select Everything you felt today:
+        <br>
+        <input type="checkbox" id="happy" name="happy" value="happy">
+  		<label for="happy"> Happy </label><br>
+        <input type="checkbox" id="sad" name="sad" value="sad">
+  		<label for="sad"> Sad </label><br>
+        <input type="checkbox" id="dissapointed" name="dissapointed" value="dissapointed">
+  		<label for="dissapointed"> Dissapointed </label><br>
+        <input type="checkbox" id="restless" name="restless" value="restless">
+  		<label for="restless"> Restless </label><br>
+        <input type="checkbox" id="motivated" name="motivated" value="motivated">
+  		<label for="motivated"> Motivated </label><br>
+         <br>
+        <input type="submit" value="Submit">
+        <button type="button">Nevermind</button>
+        <input type="reset" value="Reset">
+        </fieldset>
+        </form>
+        <br>
         <footer> Footer: This journal includes accounts from only friday, saturday and sunday </footer>
     </body>
 </html>
+
 
