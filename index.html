@@ -176,7 +176,38 @@
         <hr>
         </main>
         <br>
+        <form>
+        <fieldset>
+        <h3> New Entry for the Journal </h3>
+        <label for="date"> Date: </label>
+        <input type="date" id="date">
+        <br>
+        <label for="summary"> One line day summary:  </label>
+        <input type="text" id="summary">
+        <br>
+        <label for="stress"> Overall Day Stress: </label>
+		<input list="stress" name="stress" id="stresslist">
+		<datalist id="stress">
+ 		<option value="5 - Very Stressful">
+ 		<option value="4 - Slightly Stressful">
+  		<option value="3 - Neutral">
+ 		<option value="2 - Negligbly Stressful">
+  		<option value="1 - Not Stressful">
+		</datalist>
+        <br>
+        <label for="yest">Better than yesterday? </label>
+		<select id="yest">
+  		<option value="y">Yes</option>
+  		<option value="n">No</option>
+		</select>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        </fieldset>
+        </form>
+        <br>
         <footer> Footer: This journal includes accounts from only friday, saturday and sunday </footer>
     </body>
 </html>
+
 
